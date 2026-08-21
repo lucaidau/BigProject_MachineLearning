@@ -1,0 +1,6 @@
+env/
+
+*.npy
+Data/
+
+Models/
