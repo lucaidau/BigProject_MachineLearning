@@ -9,10 +9,10 @@ def load_images_from_folder(dataset_dir, target_size=(128, 128)):
     Y_data = []
 
     label_map ={
-        'COVID':0,
-        'Lung_Opacity': 1,
-        'Normal': 2,
-        'Viral Pneumonia':3
+        'Normal':0,
+        'COVID': 1,
+        'Viral Pneumonia': 2,
+        'Lung_Opacity':3
     }
 
     dataset_path = Path(dataset_dir)
