@@ -16,3 +16,5 @@ scipy==1.18.0
 six==1.17.0
 threadpoolctl==3.6.0
 tqdm @ git+https://github.com/tqdm/tqdm.git@5dcb022b55553b60ed2131b64aa5bf1e65470df1
+torch
+torchvision
