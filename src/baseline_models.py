@@ -10,6 +10,10 @@ from sklearn.svm import SVC
 
 
 def _load_numpy() -> tuple[np.ndarray, np.ndarray]:
+    # Use memory-mapped loading to avoid high RAM usage for large .npy files
+    processed_dir = Path("Data") / "Processed"
+    X = np.load(processed_dir / "x_resized_masked.npy", mmap_mode='r')
+    y = np.load(processed_dir / "y_labels.npy", mmap_mode='r')
     processed_dir = Path("Data") / "Processed"
     X = np.load(processed_dir / "x_resized_masked.npy")
     y = np.load(processed_dir / "y_labels.npy")
