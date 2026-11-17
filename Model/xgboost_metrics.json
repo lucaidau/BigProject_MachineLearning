@@ -1,0 +1,44 @@
+{
+  "test_accuracy": 0.8445914029286726,
+  "test_macro_f1": 0.8277087750945435,
+  "test_weighted_f1": 0.8413221970771442,
+  "selected_parameters": {
+    "max_depth": 6,
+    "learning_rate": 0.08,
+    "n_estimators": 180
+  },
+  "validation_candidates": [
+    {
+      "parameters": {
+        "max_depth": 4,
+        "learning_rate": 0.08,
+        "n_estimators": 180
+      },
+      "validation_macro_f1": 0.8120707271149528
+    },
+    {
+      "parameters": {
+        "max_depth": 6,
+        "learning_rate": 0.08,
+        "n_estimators": 180
+      },
+      "validation_macro_f1": 0.8340214277761362
+    }
+  ],
+  "class_mapping": {
+    "0": "Normal",
+    "1": "COVID",
+    "2": "Viral Pneumonia",
+    "3": "Lung_Opacity"
+  },
+  "split_sample_counts": {
+    "train": 16932,
+    "validation": 2116,
+    "test": 2117
+  },
+  "split": {
+    "method": "stratified 80/10/10",
+    "train_random_state": 42,
+    "validation_test_random_state": 41
+  }
+}
